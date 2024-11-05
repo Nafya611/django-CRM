@@ -1,6 +1,79 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+**/migrations/
+
+# Environment variables
+.venv
+
+
+# Virtual environment
 .venv/
 venv/
+env/
 
-.venv
- venv
- 
+# Django static and media files
+/staticfiles/
+/media/
+
+# Local database
+db.sqlite3
+
+# Log files
+*.log
+
+# Compiled code
+*.mo
+*.pot
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+*.cover
+coverage.xml
+
+# MyPy cache
+.mypy_cache/
+
+# Pyre type checker
+.pyre/
+
+# Celery
+celerybeat-schedule
+
+# Sphinx documentation
+docs/_build/
+
+# Build files
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Node and npm
+node_modules/
+npm-debug.log
+yarn-error.log
