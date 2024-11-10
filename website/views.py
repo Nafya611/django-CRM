@@ -18,7 +18,13 @@ def home(request):
             messages.error(request, "Invalid username or password")
 
 
+    else:
+        return render(request,'home.html',{})
+    
 
-    return render(request,'home.html',{})
 def logout_user(request):
-    pass
+    logout(request)   
+    messages.success(request,'You have been logeed out...') 
+    return redirect('home')
+
+
