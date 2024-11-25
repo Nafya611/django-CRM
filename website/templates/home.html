@@ -61,8 +61,8 @@
                     
                     </td>
                     <td>
-                        {{record.id}}
-                    
+                        <a href="{% url 'record' record.id%}">{{record.id}}</a>
+                        
                     </td>
                     
                     
@@ -78,11 +78,13 @@
         
     
     {%else%}
-        <h1>Login</h1>
-        <br>
-        <form method="post" action="{% url 'home' %}">
-            {% csrf_token %}
-            
+        <div class="col-md-6 offset-md-3">
+
+            <h1>Login</h1>
+            <br>
+            <form method="post" action="{% url 'home' %}">
+                {% csrf_token %}
+                
                 <div class="mb-3">
                     <input type="text" class="form-control" name="username", placeholder="username"  required>
                     
@@ -93,11 +95,12 @@
                     <input type="password" class="form-control"  name="password", placeholder="password" required>
                 </div>
                 <br>
-
+                
                 
                 <button type="submit" class="btn btn-secondary">Login</button>
-            
-        </form>
+                
+            </form>
+        </div>
     
 {%endif%}
 
